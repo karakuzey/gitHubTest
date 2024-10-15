@@ -1,0 +1,11 @@
+mkdir = make directory
+touch = dosya oluşturma
+ls = directory içindekileri listeleme
+rm = dosya silme
+rm -rf = directory silme
+echo > yazma echo >> üstüne yazma
+echo kullanırsan önceki bilgiler gider
+bi klasörde gitle ilgili işlem yapılacaksa ilk çalıştırılacak komut git status
+git init klasörü gitin çalışması için initalize eder 
+ls -la = dosya içindeki gizli dosyalarıda ortaya çıkarır
+eğer git status çalıştırıldıktan sonra proje zaten initialize edilmişsse tekrar git init çalıltırma sorun yapıyor

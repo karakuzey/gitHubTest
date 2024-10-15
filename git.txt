@@ -13,3 +13,5 @@ git commit -m ve sonra mesaj ile commit atılır
 git log ile daha önce atılan commitler görüntülenebilir
 git add . tüm dosyalaıarı ekler
 şimdi sıra branch kavramında proje branchlere ayrılarak farklı kişiler tarafından aynı anda geliştirilmeye devam edilebilir
+projede tek bir branch varken head son commit i gösterri
+her dosya için log lama işlemleri farklı oluyor bu şekilde 10 uncu projede 1000 tane log olmuyor mesela

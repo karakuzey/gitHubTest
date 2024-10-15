@@ -9,3 +9,6 @@ bi klasörde gitle ilgili işlem yapılacaksa ilk çalıştırılacak komut git 
 git init klasörü gitin çalışması için initalize eder 
 ls -la = dosya içindeki gizli dosyalarıda ortaya çıkarır
 eğer git status çalıştırıldıktan sonra proje zaten initialize edilmişsse tekrar git init çalıltırma sorun yapıyor
+git commit -m ve sonra mesaj ile commit atılır
+git log ile daha önce atılan commitler görüntülenebilir
+git add . tüm dosyalaıarı ekler

@@ -16,3 +16,21 @@ git add . tüm dosyalaıarı ekler
 projede tek bir branch varken head son commit i gösterri
 her dosya için log lama işlemleri farklı oluyor bu şekilde 10 uncu projede 1000 tane log olmuyor mesela
 git branch komutu çalıştırıldığı zaman o an bulunan tüm branchler görüntülenir
+
+git branch <feature> gibi isim kullanılırsa bu yeni bi branch oluşturulduğu anlamına gelir brancler arasında değişiklik yapmak için 
+git switch branch adı kullanılır
+git branch kullanıldığı zaman hangi branch üzerinde olduğunuz görünür
+önemli bi nokta herhangi bi branchte bi dosya açıp commit etmiş olabilirsin ama bu diğer branchler içinde görülmez hatta branch değiştirirsen o dosya kaybolmuş gibi gözükebilir
+branch tekrar değişince veya iki branch merge işlemi uygulandığında bu sorun gibi gözüken şey çözülmüş olur
+zaten sorunda değil ama çalışma ortamlarının ayrılması daha çok diyelim
+git merge işleminde eğer yeni branch açıldıktan sonra master da hşçbşr değişiklik yupılmazsa buna fast forward denir 
+CONFLICT dediğimiz olay yeni branch açıldıktan sonra master branchte bir şeylerin silinmesi veya değiştirilmesi olayı merge ederken diyo zaten nasıl birleştirme yapıyım diyn onu biz ayarlıyoruz
+
+
+stash komutu bi değişiklik main branch harici bi değişiklik yapılırken master branche dönmek zorunda kalırsak ama feat branchte ki özellik henüz commit etmeye hazır değilse kullanılır pc de bi yerlerde onu saklıyorsun gibi düşünebşlirsin
+
+stash ile silinmiş gibi gözüken verileri daha sonra git stash pop ile geri getirebilirsin
+
+EĞER birder fazla git stash depolandıysa git stash apply ile depolanan verilerden istenilen geri çağrılabilir
+
+git stash clear ile tüm stash ler silinebilir

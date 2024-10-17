@@ -24,6 +24,7 @@ git branch kullanıldığı zaman hangi branch üzerinde olduğunuz görünür
 branch tekrar değişince veya iki branch merge işlemi uygulandığında bu sorun gibi gözüken şey çözülmüş olur
 zaten sorunda değil ama çalışma ortamlarının ayrılması daha çok diyelim
 git merge işleminde eğer yeni branch açıldıktan sonra master da hşçbşr değişiklik yupılmazsa buna fast forward denir 
+
 CONFLICT dediğimiz olay yeni branch açıldıktan sonra master branchte bir şeylerin silinmesi veya değiştirilmesi olayı merge ederken diyo zaten nasıl birleştirme yapıyım diyn onu biz ayarlıyoruz
 
 
@@ -34,3 +35,28 @@ stash ile silinmiş gibi gözüken verileri daha sonra git stash pop ile geri ge
 EĞER birder fazla git stash depolandıysa git stash apply ile depolanan verilerden istenilen geri çağrılabilir
 
 git stash clear ile tüm stash ler silinebilir
+
+eğer daha yeni değişiklik eklenmeden add  yapılmadan git restore file name çalışırsa son commite dönüş yapar
+
+git checkout dönülmek istenen commit kodu ile istenilen zamana dönülür bu sırada istenirse notlar alınır değişiklere bakılır ve git switch master ile değişiklikler yapılmış hale dönülür istenirse yeni bi branch açılıp ordan projeye devam edilir
+
+
+git reset dönülecek log kodu ile istenilen logtan sonraki loglar silinir ama değişiklikler örneğin büyük bi feature da bikaç commit attıktan sonra bir loga dönülecek ve sonraki loglara ihtiyaç olmayacak bi noktada olucaz gibi düşünebilirsin örneğin feature completed gibi bi komut olucak onun yerine
+
+git reset --hard hem komutları hem değişikleri siler çok dikkatli olunması lazım bunda çünkü hem logları hemde değişikleri siliyor sonra bela olur başına
+
+git revert file path ile hem geri dönüş sağlanır git restore --hard gibi hemde daha önceki loglar silinmez bunu yapmak daha mantılı gibi duruyor git restore --hard baya aykırı çünkü
+
+
+şimdi checkout videosunu tekrar izledikten sonra bi açıklama ihtiyacı hissettim 
+
+CHECKOUT tan sonra iki seçenek var 
+1) git switch master ile son hale geri dönmek
+2) git switch <branchName> ile yeni bi branch oluşturup orda birşeyler yapmak
+
+git revert dedğimiz anda ki sırayla yapılması tavsiye edilir son komut mesela son commit iptal edildi gibi düşün reset --hard gibi AMA log kaybolmuyor o noktaya geri dönüş hala mümkğn bu çok önemli
+
+git diff add yapılmadan önce kullanılırsa son commit ile arasındaki farklılıklar verir
+
+eğer add den sonra kullanılırsa da git diff HEAD
+olarak add yapılmış olsa bile sorun değil bunda son commit ile şu an arasındaki farkı verir

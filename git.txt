@@ -63,3 +63,4 @@ olarak add yapılmış olsa bile sorun değil bunda son commit ile şu an arası
 git diff path ile path path ile belirtilen iki path arasındaki farkları görebilirsin
 
 git rebase komutu iki farklı branchlere atılan commitler birbirini etkilemiyorsa ve biz merge işleminden sonra masterın commitlerini ve feat commitlerini farklı sırada görmek istiyorsak kullanılan bi yöntemdir özellikle git hubta yayınlanan bi repoda çalışılıyorsa kullanılması pek tavsiye edilmez
+git push işlemi yapılmadan önce hem add hemde commit işlemleri yapılmış olmalı 

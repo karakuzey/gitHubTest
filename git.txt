@@ -4,7 +4,7 @@ ls = directory içindekileri listeleme
 rm = dosya silme
 rm -rf = directory silme
 echo > yazma echo >> üstüne yazma
-echo kullanırsan önceki bilgiler gider
+echo > kullanırsan önceki bilgiler gider
 bi klasörde gitle ilgili işlem yapılacaksa ilk çalıştırılacak komut git status
 git init klasörü gitin çalışması için initalize eder 
 ls -la = dosya içindeki gizli dosyalarıda ortaya çıkarır
@@ -60,3 +60,6 @@ git diff add yapılmadan önce kullanılırsa son commit ile arasındaki farklı
 
 eğer add den sonra kullanılırsa da git diff HEAD
 olarak add yapılmış olsa bile sorun değil bunda son commit ile şu an arasındaki farkı verir
+git diff path ile path path ile belirtilen iki path arasındaki farkları görebilirsin
+
+git rebase komutu iki farklı branchlere atılan commitler birbirini etkilemiyorsa ve biz merge işleminden sonra masterın commitlerini ve feat commitlerini farklı sırada görmek istiyorsak kullanılan bi yöntemdir özellikle git hubta yayınlanan bi repoda çalışılıyorsa kullanılması pek tavsiye edilmez

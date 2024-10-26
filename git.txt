@@ -54,6 +54,7 @@ CHECKOUT tan sonra iki seçenek var
 1) git switch master ile son hale geri dönmek
 2) git switch <branchName> ile yeni bi branch oluşturup orda birşeyler yapmak
 
+
 git revert dedğimiz anda ki sırayla yapılması tavsiye edilir son komut mesela son commit iptal edildi gibi düşün reset --hard gibi AMA log kaybolmuyor o noktaya geri dönüş hala mümkğn bu çok önemli
 
 git diff add yapılmadan önce kullanılırsa son commit ile arasındaki farklılıklar verir
@@ -64,3 +65,5 @@ git diff path ile path path ile belirtilen iki path arasındaki farkları göreb
 
 git rebase komutu iki farklı branchlere atılan commitler birbirini etkilemiyorsa ve biz merge işleminden sonra masterın commitlerini ve feat commitlerini farklı sırada görmek istiyorsak kullanılan bi yöntemdir özellikle git hubta yayınlanan bi repoda çalışılıyorsa kullanılması pek tavsiye edilmez
 git push işlemi yapılmadan önce hem add hemde commit işlemleri yapılmış olmalı 
+
+git fetch ile githubtan dosya çekilmiş gibi düşünebilirsin git pull ile git hub ile aynı konuma getirme işlemi uygulanabilir
